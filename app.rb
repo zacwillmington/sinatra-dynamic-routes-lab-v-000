@@ -35,7 +35,7 @@ class App < Sinatra::Base
          @a << v
       end
        @dis = @a.join('" ,"')
-      
+
        @dis.gsub("[ ]", " ").to_s
 
   end
