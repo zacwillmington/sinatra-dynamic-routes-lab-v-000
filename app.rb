@@ -22,7 +22,7 @@ class App < Sinatra::Base
              @phrases << @phrase
         end
 
-        "#{@phrases}"
+        "#{@phrases.gsub(',"', " " )}"
 
 
   end
