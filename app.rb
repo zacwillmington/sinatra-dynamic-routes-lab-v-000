@@ -14,21 +14,21 @@ class App < Sinatra::Base
       "#{@squared}"
   end
 
-  # get "/say/:number/:phrase" do
-  #     @number = params[:number].to_i
-  #     @phrase = params[:phrase].gsub("%20", " ")
-  #     @phrases = []
-  #     binding.pry
-  #       @number.times do
-  #            @phrases << @phrase
-  #       end
-  #       # @p = @phrases.gsub(',"', ' ').flatten
-  #       @p = @phrases
-  #       binding.pry
-  #       "#{@p}"
-  #
-  #
-  # end
+  get "/say/:number/:phrase" do
+      @number = params[:number].to_i
+      @phrase = params[:phrase].gsub("%20", " ")
+      @phrases = []
+      binding.pry
+        @number.times do
+             @phrases << @phrase
+        end
+        # @p = @phrases.gsub(',"', ' ').flatten
+        @p = @phrases
+        binding.pry
+        "#{@p}"
+  
+  
+  end
 
   get "/say/:word1/:word2/:word3/:word4/:word5" do
       @a = []
