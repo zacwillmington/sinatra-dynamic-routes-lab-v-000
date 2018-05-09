@@ -24,7 +24,6 @@ class App < Sinatra::Base
         end
         # @p = @phrases.gsub(',"', ' ').flatten
         @p = @phrases
-        binding.pry
         "#{@p}"
 
 
