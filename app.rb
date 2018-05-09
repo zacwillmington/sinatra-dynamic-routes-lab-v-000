@@ -22,7 +22,8 @@ class App < Sinatra::Base
         @number.times do
              @phrases << @phrase
         end
-        @p = @phrases.gsub(',"', ' ').flatten
+        # @p = @phrases.gsub(',"', ' ').flatten
+        @p = @phrases.flatten
         binding.pry
         "#{@p}"
 
