@@ -30,13 +30,13 @@ class App < Sinatra::Base
 
   get "/say/:word1/:word2/:word3/:word4/:word5" do
       "hello"
-    #   @a = []
-    #   params.each do |k,v|
-    #      @a << v
-    #   end
-    #    @dis = @a.gsub('" ,"', ' ')
-      # 
-    #    @dis.gsub("[ ]", " ").to_s
+      @a = []
+      params.each do |k,v|
+         @a << v
+      end
+       @dis = @a.join('" ,"')
+      
+       @dis.gsub("[ ]", " ").to_s
 
   end
 
