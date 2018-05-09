@@ -34,7 +34,7 @@ class App < Sinatra::Base
       params.each do |k,v|
          @a << v
       end
-       @d = @a.join('')
+       @d = @a.join(' ')
        "#{@d}"
 
   end
