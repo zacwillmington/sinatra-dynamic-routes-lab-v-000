@@ -46,7 +46,7 @@ class App < Sinatra::Base
            @total = @number1 / @number2
        end
 
-      "#{@add}"
+      "#{@total}"
 
   end
 
