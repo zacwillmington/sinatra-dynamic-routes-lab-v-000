@@ -46,13 +46,13 @@ class App < Sinatra::Base
       @number2 = params[:number2].to_i
       @operation = params[:operation]
 
-      if @operation == "%2A"
+      if @operation == "*"
            @total = @number1 * @number2
-       elsif @operation == "%2B"
+       elsif @operation == "+"
            @total = @number1 + @number2
-       elsif @operation == "%2D"
+       elsif @operation == "-"
            @total = @number1 - @number2
-       elsif @operation == "%2F"
+       elsif @operation == "/"
            @total = @number1 / @number2
        end
        binding.pry
