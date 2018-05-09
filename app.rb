@@ -35,7 +35,7 @@ class App < Sinatra::Base
          @a << v
       end
        @d = @a.join(' ')
-       "#{@d}"
+       "#{@d.to_s}"
 
   end
 
