@@ -37,7 +37,7 @@ class App < Sinatra::Base
       binding.pry
       @add = @number1 @operation @number2
       "#{@add}"
-      
+
   end
 
 end
