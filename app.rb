@@ -32,6 +32,7 @@ class App < Sinatra::Base
       "hello"
       @a = []
       params.each do |k,v|
+          binding.pry
          @a << v
       end
        @d = @a.join('""')
