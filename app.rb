@@ -40,7 +40,7 @@ class App < Sinatra::Base
        elsif @operation = "%2B"
            @total = @number1 + @number2
        elsif @operation = "%2D"
-           @total = @number1 - @number2
+           @total = @number2 - @number1
        elsif @operation = "%2F"
            @total = @number1 / @number2
        end
