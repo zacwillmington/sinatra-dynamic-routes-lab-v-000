@@ -35,8 +35,9 @@ class App < Sinatra::Base
       @number2 = params[:number2].to_i
       @operation = params[:operation]
       binding.pry
-      @add = @number2 + @number1
+      @add = @number1 @operation @number2
       "#{@add}"
+      
   end
 
 end
