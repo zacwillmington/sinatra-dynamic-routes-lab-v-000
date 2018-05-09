@@ -36,6 +36,8 @@ class App < Sinatra::Base
       @operation = params[:operation]
       binding.pry
       @add = @number1 @operation @number2
+      if @operation = %2A
+          @operation = *
       "#{@add}"
 
   end
