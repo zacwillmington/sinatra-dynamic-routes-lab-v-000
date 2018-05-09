@@ -21,8 +21,8 @@ class App < Sinatra::Base
         @number.times do
              @phrases << @phrase
         end
-
-        "#{@phrases.gsub(',"', " " )}"
+        @p = @phrases.gsub(',"', ' ').flatten
+        "#{@p}"
 
 
   end
