@@ -36,6 +36,7 @@ class App < Sinatra::Base
       @operation = params[:operation]
       binding.pry
       @add = @number1 @operation @number2
+      
       if @operation = "%2A"
            @total = @number1 * @number2
        elsif @operation = "%2B"
@@ -45,7 +46,6 @@ class App < Sinatra::Base
        elsif @operation = "%2F"
            @total = @number1 / @number2
        end
-
       "#{@total}"
 
   end
