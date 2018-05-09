@@ -32,6 +32,11 @@ class App < Sinatra::Base
 
   get "/say/:word1/:word2/:word3/:word4/:word5" do
       binding.pry
+      @a = []
+      params.each do |k,v|
+         @a << v
+      end
+      @a.to_s
       
   end
 
