@@ -37,7 +37,7 @@ class App < Sinatra::Base
       end
        @dis = @a.gsub('" ,"', ' ')
 
-       @dis.gsub("[ ]", " ")
+       @dis.gsub("[ ]", " ").to_s
 
       binding.pry
 
