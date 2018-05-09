@@ -19,10 +19,10 @@ class App < Sinatra::Base
       @phrase = params[:phrase].gsub("%20", " ")
       binding.pry
         @number.times do
-             ""
+             "#{@phrase}"
         end
 
-        "#{@phrase}"
+
   end
 
 end
