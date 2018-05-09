@@ -37,7 +37,28 @@ class App < Sinatra::Base
 
        @dis.gsub("[ ]", " ").to_s
 
+      binding.pry
 
+  end
+
+
+  get "/:operation/:number1/:number2" do
+
+      erb :sayNtimes
+
+      @number1 = params[:number1].to_i
+      @number2 = params[:number2].to_i
+      @operation = params[:operation]
+
+      if @operation = "%2A"
+           @total = @number1 * @number2
+       elsif @operation = "%2B"
+           @total = @number1 + @number2
+       elsif @operation = "%2D"
+           @total = @number1 - @number2
+       elsif @operation = "%2F"
+           @total = @number1 / @number2
+       end
   end
 
 end
