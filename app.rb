@@ -35,7 +35,8 @@ class App < Sinatra::Base
       params.each do |k,v|
          @a << v
       end
-      @a.to_s.gsub('" ,"', ' ').gsub("[ ]", " ")
+       @dis = @a.to_s.gsub('" ,"', ' ').gsub("[ ]", " ")
+       
       binding.pry
 
   end
