@@ -55,8 +55,7 @@ class App < Sinatra::Base
        elsif @operation == "%2F"
            @total = @number1 / @number2
        end
+        "hello #{@total}"
   end
-
-  "hello #{@total}"
 
 end
