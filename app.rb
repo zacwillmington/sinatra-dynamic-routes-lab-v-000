@@ -44,7 +44,6 @@ class App < Sinatra::Base
        elsif @operation = "%2F"
            @total = @number1 / @number2
        end
-       binding.pry
       "#{@total}"
 
   end
