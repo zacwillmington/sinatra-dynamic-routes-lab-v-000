@@ -37,7 +37,8 @@ class App < Sinatra::Base
          @a << v
       end
       @a.to_s.gsub(',"', ' ')
-      
+      binding.pry
+
   end
 
 
